@@ -1,0 +1,223 @@
+:root {
+    --color-top: #C66;
+    --color-bottom: #6C6;
+    --color-left: #66C;
+    --color-right: #CC6;
+    --color-square: #999;
+    --full-height: 84px; /* 104 */
+    --half-height: 42px; /* 52 */
+    --bottom-margin: -40px; /* -50 */
+    --top-margin: 43px; /* 53 */
+    --right-margin: -26px; /* -26 */
+    --my-border: 30px; /* 30 */
+}
+
+/*  */
+
+.hex {
+    float: left;
+    margin-right: var(--right-margin);
+    margin-bottom: var(--bottom-margin);
+}
+
+.transparent-hex, .transparent-hex-even {
+    float: left;
+    width: 140px;
+    height: var(--full-height);
+    margin-right: var(--right-margin);
+    margin-bottom: var(--bottom-margin);
+}
+
+.transparent-3hex-even {
+    float: left;
+    width: 368px;
+    height: var(--full-height);
+    margin-right: var(--right-margin);
+    margin-bottom: var(--bottom-margin);
+}
+
+/* div voor edge text */
+.t1 {
+    float: left;
+}
+.t1, .t2 {
+    width: 50px;
+}
+
+.edge-top {
+    margin-top: 50px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.edge-bottom {
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.edge-left, .edge-right {
+    height: 653px; /* 653 */
+    writing-mode: vertical-rl;
+    text-align: center;
+    font-weight: bold;
+}
+
+.color-text { display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 84px;
+    margin: 0;
+}
+
+.white-text { display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 84px;
+    margin: 0;
+}
+
+.hex .middle {
+    float: left;
+    width: 80px;
+    height: var(--full-height);
+    background: var(--color-square);
+    margin: auto;
+    text-align: center;
+}
+
+.hex .right {
+    float: left;
+    width: 0;
+    border-left: var(--my-border) solid var(--color-left);
+    border-top: var(--half-height) solid transparent;
+    border-bottom: var(--half-height) solid transparent;
+}
+
+.hex .left {
+    float: left;
+    width: 0;
+    border-right: var(--my-border) solid var(--color-right);
+    border-top: var(--half-height) solid transparent;
+    border-bottom: var(--half-height) solid transparent;
+}
+
+.hex .white-middle {
+    float: left;
+    width: 80px;
+    height: var(--full-height);
+    background: whitesmoke;
+    margin: auto;
+    text-align: center;
+}
+
+.hex .white-right {
+    float: left;
+    width: 0;
+    border-left: var(--my-border) solid whitesmoke;
+    border-top: var(--half-height) solid transparent;
+    border-bottom: var(--half-height) solid transparent;
+}
+
+.hex .white-left {
+    float: left;
+    width: 0;
+    border-right: var(--my-border) solid whitesmoke;
+    border-top: var(--half-height) solid transparent;
+    border-bottom: var(--half-height) solid transparent;
+}
+
+.hex .color1-middle {
+    float: left;
+    width: 80px;
+    height: var(--full-height);
+    background: rgb(136, 191, 151);
+    margin: auto;
+    text-align: center;
+}
+
+.hex .color1-right {
+    float: left;
+    width: 0;
+    border-left: var(--my-border) solid rgb(136, 191, 151);
+    border-top: var(--half-height) solid transparent;
+    border-bottom: var(--half-height) solid transparent;
+}
+
+.hex .color1-left {
+    float: left;
+    width: 0;
+    border-right: var(--my-border) solid rgb(136, 191, 151);
+    border-top: var(--half-height) solid transparent;
+    border-bottom: var(--half-height) solid transparent;
+}
+
+.hex .color2-middle {
+    float: left;
+    width: 80px;
+    height: var(--full-height);
+    background: rgb(218, 227, 198);
+    margin: auto;
+    text-align: center;
+}
+
+.hex .color2-right {
+    float: left;
+    width: 0;
+    border-left: var(--my-border) solid rgb(218, 227, 198);
+    border-top: var(--half-height) solid transparent;
+    border-bottom: var(--half-height) solid transparent;
+}
+
+.hex .color2-left {
+    float: left;
+    width: 0;
+    border-right: var(--my-border) solid rgb(218, 227, 198);
+    border-top: var(--half-height) solid transparent;
+    border-bottom: var(--half-height) solid transparent;
+}
+
+.hex .color3-middle {
+    float: left;
+    width: 80px;
+    height: var(--full-height);
+    background: rgb(193, 225, 246);
+    margin: auto;
+    text-align: center;
+}
+
+.hex .color3-right {
+    float: left;
+    width: 0;
+    border-left: var(--my-border) solid rgb(193, 225, 246);
+    border-top: var(--half-height) solid transparent;
+    border-bottom: var(--half-height) solid transparent;
+}
+
+.hex .color3-left {
+    float: left;
+    width: 0;
+    border-right: var(--my-border) solid rgb(193, 225, 246);
+    border-top: var(--half-height) solid transparent;
+    border-bottom: var(--half-height) solid transparent;
+}
+
+.hex-row {
+    clear: left;
+}
+
+.hex.even {
+    margin-top: var(--top-margin);
+}
+
+.x {
+    background-color: yellow;
+}
+.y {
+    background-color: orange;
+}
+h2 {
+    margin-left: 10px;
+    margin-top:10px;
+    margin-bottom:0;
+}
