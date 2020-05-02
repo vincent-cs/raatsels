@@ -77,7 +77,7 @@ document.addEventListener('click', function (event) {
 
         let clickedElem = event.target;
         // Log the clicked element in the console
-        console.log(clickedElem);
+        // console.log(clickedElem);
 
         if (clickedElem.classList.contains('white-text')) {
             if (clickedElem.classList.contains('x')) {
@@ -140,7 +140,7 @@ document.addEventListener('click', function (event) {
 let modal = document.getElementById("myModal");
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
-let modalImg = document.getElementById("modal-content");
+// let modalImg = document.getElementById("modal-content");
 let captionText = document.getElementById("caption");
 
 // Get the <span> element that closes the modal
@@ -150,6 +150,9 @@ let closeMyModal = document.getElementsByClassName("close")[0];
 closeMyModal.onclick = function () {
     modal.style.display = "none";
 }
+
+let tempSave = document.getElementById("temp_save");
+tempSave.onclick = function() { status() };
 
 function status() {
     let white_status = [];
@@ -162,8 +165,17 @@ function status() {
         let index = "c" + i;
         colored_status.push(document.getElementById(index).innerText);
     }
-    console.log("white_cells");
-    console.log(white_status);
-    console.log("colored_cells=");
-    console.log(colored_status);
+
+    if (document.getElementById("temp_status").style.display === "none") {
+        document.getElementById("temp_status").style.display = "block";
+        document.getElementById("witte_cellen_status").innerText = white_status.join(" - ");
+        document.getElementById("gekleurde_cellen_status").innerText = colored_status.join(" - ");
+
+        console.log("white_cells=");
+        console.log(white_status);
+        console.log("colored_cells=");
+        console.log(colored_status);
+    } else {
+        document.getElementById("temp_status").style.display = "none";
+    }
 }

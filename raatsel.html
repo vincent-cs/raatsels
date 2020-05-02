@@ -235,36 +235,53 @@
 
 <div style="clear: both">
     <p><a href="#18">week 18</a>&nbsp;-&nbsp;
-        <a id="week_18" data-puzzle="2020-05-02" href="https://www.nrc.nl/nieuws/2020/05/02/raatsel-a3997534">NRC raatsel 2 mei 2020</a>
+        <a id="week_18" data-puzzle="2020-05-02" href="https://www.nrc.nl/nieuws/2020/05/02/raatsel-a3997534">NRC
+            raatsel 2 mei 2020</a>
     </p>
     <p><a href="#17">week 17</a>&nbsp;-&nbsp;
-        <a id="week_17" data-puzzle="2020-04-25" href="https://www.nrc.nl/nieuws/2020/04/25/raatsel-a3997534">NRC raatsel 25 april 2020</a>
+        <a id="week_17" data-puzzle="2020-04-25" href="https://www.nrc.nl/nieuws/2020/04/25/raatsel-a3997534">NRC
+            raatsel 25 april 2020</a>
     </p>
     <p><a href="#16">week 16</a>&nbsp;-&nbsp;
-        <a id="week_16" data-puzzle="2020-04-18" href="https://www.nrc.nl/nieuws/2020/04/18/raatsel-a3996850">NRC raatsel 18 april 2020</a>
+        <a id="week_16" data-puzzle="2020-04-18" href="https://www.nrc.nl/nieuws/2020/04/18/raatsel-a3996850">NRC
+            raatsel 18 april 2020</a>
     </p>
     <p><a href="#15">week 15</a>&nbsp;-&nbsp;
-        <a id="week_15" data-puzzle="2020-04-11" href="https://www.nrc.nl/nieuws/2020/04/11/raatsel-a3995577">NRC raatsel 11 april 2020</a>
+        <a id="week_15" data-puzzle="2020-04-11" href="https://www.nrc.nl/nieuws/2020/04/11/raatsel-a3995577">NRC
+            raatsel 11 april 2020</a>
     </p>
     <p><a href="#14">week 14</a>&nbsp;-&nbsp;
-        <a id="week_14" data-puzzle="2020-04-04" href="https://www.nrc.nl/nieuws/2020/04/04/raatsel-a3995577">NRC raatsel 4 april 2020</a>
+        <a id="week_14" data-puzzle="2020-04-04" href="https://www.nrc.nl/nieuws/2020/04/04/raatsel-a3995577">NRC
+            raatsel 4 april 2020</a>
     </p>
     <p><a href="#13">week 13</a>&nbsp;-&nbsp;
-        <a id="week_13" data-puzzle="2020-03-28" href="https://www.nrc.nl/nieuws/2020/03/28/raatsel-a3994896">NRC raatsel 28 maart 2020</a>
+        <a id="week_13" data-puzzle="2020-03-28" href="https://www.nrc.nl/nieuws/2020/03/28/raatsel-a3994896">NRC
+            raatsel 28 maart 2020</a>
     </p>
-    <p><button class="oplossing">oplossing (spoiler alert!)</button></p>
+    <p>
+        <button class="oplossing">oplossing (spoiler alert!)</button>
+        <button id="temp_save">temp save array</button>
+    </p>
 </div>
 
-<hr/>
+<div id="temp_status" style="display:none;">
+    <hr/>
+    <p style="color: gray">*** TODO: temp status nog opslaan in database en vergelijken met oplossing ***</p>
+    <p><b>nieuwe volgorde:</b></p>
+    <p><b>Witte cellen:</b> <span id="witte_cellen_status"></span></p>
+    <p><b>Gekleurde cellen:</b> <span id="gekleurde_cellen_status"></span></p>
+</div>
+
 <div>
+    <hr/>
     <p><b>Witte cellen:</b> <span id="witte_cellen">België - Dit jaar geschrapt – Floraal – Frankrijk - Met oo – Religieus – Voetbal</span>
     </p>
     <p><b>Gekleurde cellen:</b> <span id="gekleurde_cellen">Alex Pastoor – Anderlecht – Ardennen – Bizet – Bloemencorso Zundert – Burgers Zoo – Delacroix – Doop – Eddy Merckx – Euro 2020 – F1 Zandvoort – Fleur de lis – Gelredome – Gloria – Guido Gezelle – Hadewijch – Iris – Jaques Brel – Louis Paul Boon – Marcel van Roosmalen – Matthäus-Passion – Millet – Monnikskap – Parijs-Roubaix – Ronde van Vlaanderen – Rui Costa – Theo Bos – Tom Boonen – Veronica – Zonnebloem</span>
     </p>
 </div>
 
-<hr/>
 <div>
+    <hr/>
     <p><b>Uitleg:</b> De symmetrische raat heeft 37 cellen (7 witte en 30 gekleurde). Daarin moet je 37 woorden
         invullen. Je krijgt ze alle 37 cadeau, je hoeft alleen maar uit te vinden waar ze moeten staan. Makkelijk
         gezegd, moeilijker gedaan. Hoe gaat het in z’n werk?</p>
@@ -278,8 +295,8 @@
         plek. Verwissel de woorden van plek om de puzzel op te lossen</p>
     <p><b>De wisseltruck: </b>Klik op een woord en zijn achtergrond word geel of oranje, vervolgens klik op de nieuwe
         plek en de woorden zijn verwisseld. Veel succes!</p>
+    <hr/>
 </div>
-<hr/>
 
 <!-- The Modal -->
 <div id="myModal" class="modal">
