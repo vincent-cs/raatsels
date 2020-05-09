@@ -12,6 +12,16 @@
     --my-border: 30px; /* 30 */
 }
 
+.main {
+    max-width: 950px;
+    margin: auto;
+}
+
+.puzzle-area {
+    width: 950px;
+    float: left;
+}
+
 /*  */
 
 .hex {
@@ -40,6 +50,7 @@
 .t1 {
     float: left;
 }
+
 .t1, .t2 {
     width: 50px;
 }
@@ -63,14 +74,16 @@
     font-weight: bold;
 }
 
-.color-text { display: flex;
+.color-text {
+    display: flex;
     justify-content: center;
     align-items: center;
     height: 84px;
     margin: 0;
 }
 
-.white-text { display: flex;
+.white-text {
+    display: flex;
     justify-content: center;
     align-items: center;
     height: 84px;
@@ -213,11 +226,14 @@
 .x {
     background-color: yellow;
 }
+
 .y {
     background-color: orange;
 }
+
 h2 {
     margin-left: 0px;
     margin-top: 0px;
-    margin-bottom:0;
+    margin-bottom: 0;
 }
+
