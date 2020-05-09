@@ -153,12 +153,13 @@ function status() {
         document.getElementById("temp_status").style.display = "block";
         document.getElementById("witte_cellen_status").innerText = white_status.join(" - ");
         document.getElementById("gekleurde_cellen_status").innerText = colored_status.join(" - ");
-
+        document.getElementById("temp_save").innerHTML="verberg nieuwe volgorde";
         console.log("white_cells=");
         console.log(white_status);
         console.log("colored_cells=");
         console.log(colored_status);
     } else {
         document.getElementById("temp_status").style.display = "none";
+        document.getElementById("temp_save").innerHTML="toon nieuwe volgorde";
     }
 }
