@@ -1,59 +1,35 @@
 "use strict";
 
-let edge_cells = [];
-let white_cells = [];
-let colored_cells = [];
+import {
+    edge_cells,
+    white_cells,
+    colored_cells,
+    nrc_week,
+    nrc_week_min,
+    nrc_week_max,
+    nrc_date,
+    nrc_href,
+    setWeekPuzzle
+} from "./raatsel-week-puzzels.js";
+
+let menu = "<li><a >week</a></li>";
+let menu_date = new Date(2020, 2, 28);
+const menu_date_option = {month: 'long', day: 'numeric'};
+for (let x = nrc_week_min; x <= nrc_week_max; x++) {
+    menu += "<li><a href='#" + x + "'>" + x + " / " + menu_date.toLocaleDateString("nl-NL", menu_date_option) + "</a></li>\n";
+    menu_date.setDate(menu_date.getDate() + 7);
+}
+document.getElementById("menu_week_met_datum").innerHTML = menu;
 
 function locationHashChanged() {
-// raatsels previous weeks
-    switch (location.hash) {
-        default:
-            location.hash = "19";
-        case "#19" :
-            // NRC raatsel 2 mei 2020, week 18
-            edge_cells = ["Eindigt op een a", "Dier", "Feeks", "Monic Hendrickx", "Palindroom", "Indonesië"];
-            white_cells = ["5 letters", "Automodel", "Begint met een s", "Meisjesnaam", "Mythologie", "NAVO-alfabet", "Stad"];
-            colored_cells = ["Anna", "Bravo", "Carina", "Echo", "Eenhoorn", "Eos", "Furie", "Harpij", "Hydra", "India", "Juliett", "Ka", "Kenau", "Kreng", "Lima", "Mustang", "Nadine", "Nynke", "Petra", "Quebec", "Sawa’s", "Semarang", "Sierra", "Sijs", "Soenda", "Soerabaja", "Sofia", "Sonja", "Suus", "Toledo"];
-            break;
-        case "#18" :
-            // NRC raatsel 2 mei 2020, week 18
-            edge_cells = ["Bevestigingsmiddel", "Politicus", "Zelfde begin- en eindletter", "Begint met een R", "Zeevaarder", "dubbele"];
-            white_cells = ["Hoofdstad VS-staat", "In de bouw", "Jongensnaam", "Scheeps-onderdeel", "Schip", "Sterrenbeeld", "Vogel"];
-            colored_cells = ["Anker", "Arend", "Axle", "Bismarck", "Bodem", "Columbus", "Duif", "Eenhoorn", "Hamer", "Hein", "Koekoek", "Kompas", "Koolmees", "Kraan", "Lier", "Maasdam", "Nagel", "Nelson", "Phoenix", "Pierre", "Rainbow Worrior", "Releigh", "Reiger", "Richmond", "Rotterdam", "Schroef", "Steven", "Tapbout", "Valk", "Winkelhaak"];
-            break;
-        case "#17" :
-            // NRC raatsel 25 april 2020, week 17
-            edge_cells = ["Inspiratie voor van Gogh", "Meisjesnaam", "Schrijver", "Arnhem", "Wielersport", "Brussels metrostation"];
-            white_cells = ["België", "Dit jaar geschrapt", "Floraal", "Frankrijk", "Met oo", "Religieus", "Voetbal"];
-            colored_cells = ["Alex Pastoor", "Anderlecht", "Ardennen", "Bizet", "Bloemencorso Zundert", "Burgers Zoo", "Delacroix", "Doop", "Eddy Merckx", "Euro 2020", "F1 Zandvoort", "Fleur de lis", "Gelredome", "Gloria", "Guido Gezelle", "Hadewijch", "Iris", "Jaques Brel", "Louis Paul Boon", "Marcel van Roosmalen", "Matthäus-Passion", "Milet", "Monnikskap", "Parijs-Roubaix", "Ronde van Vlaanderen", "Rui Costa", "Theo Bos", "Tom Boonen", "Veronica", "Zonnebloem"];
-            break;
-        case "#16":
-            // NRC raatsel 18 april 2020, week 16
-            edge_cells = ["Australië", "Naast elkaar", "Op de huid", "Begint met een S", "Romeinse oudheid", "Maakte beroemde reis"];
-            white_cells = ["Als held vereerd", "Auto", "Dubbelop", "Duitsland", "Kleding", "Stad", "Televisie"];
-            colored_cells = ["Aeneas", "Arminius", "Baden-Baden", "Barentsz", "Buurman en Buurman", "Cancan", "Columbus", "Dallas", "Darwin", "Duster", "Kiel", "Kielekiele", "Lederhose", "Lepeltje-lepeltje", "Lincoln", "Neighbours", "Octavia", "SamSam", "Smart", "Scorpio", "Ski-jack", "Skinny jeans", "Spartacus", "Sydney", "Tatort", "Taunus", "The Flying Doctors", "Tutu", "Washington", "Wetsuit"];
-            break;
-        case "#15":
-            // NRC raatsel 11 april 2020, week 15
-            edge_cells = ["4 letters", "Deel van een vuurwapen", "Eerste of Tweede", "Eindigt op een I", "Lichaamsdeel", "Hugo"];
-            white_cells = ["In een restaurant", "Minister", "Muziek", "Op het boerenerf", "Palindroom", "Ruimte", "Zanger"];
-            colored_cells = ["Aardappelen", "Borst", "Bot", "Brood", "De Groot", "De Jonge", "Gang", "Haak", "Haan", "Kaak", "Kamer", "Klas", "Knol", "Kok", "Kroes", "Lel", "Lepel", "Levensnevel", "Long", "Lounge", "Magazijn", "Muzak", "Pink", "Pop", "Stal", "Stem", "Soul", "Trekker", "Viool", "Zalm"];
-            break;
-        case "#14":
-            // NRC raatsel 4 april 2020, week 14
-            edge_cells = ["Op de kermis", "Jan Wolkers", "Monique van de Ven", "Meisjesnaam", "Zelfde begin- en eindletter", "Begint met een C"];
-            white_cells = ["Drank", "Eindigt op een o", "Film", "Lekkernij", "Muzikaal", "Plant", "Tijdschrift"];
-            colored_cells = ["Antonia", "Botsauto", "Brandende Liefde", "Candy", "Calypso", "Casino", "Cognac", "Cosmopolitan", "Curacau", "De aanslag", "Elle", "Fanfare", "Gesponnen suiker", "Gifsla", "Iris", "Isabelle", "KIJK", "Magnolia", "Mai Tai", "Margriet", "Mars", "Mojito", "Ouzo", "Pepermunt", "Rolling Stone", "Rolo", "Tango", "Turks fruit", "Viool", "Zuurstok"];
-            break;
-        case "#13":
-            // NRC raatsel 28 maart 2020, week 13
-            edge_cells = ["Winkels", "Colomnist", "Vader en zoon", "Begin met een V", "Zes letters", "Begint met een S"];
-            white_cells = ["Ajax", "Boeken", "Jan", "Presentator", "Scheepvaart", "Snelheidssport", "Tweeling"];
-            colored_cells = ["Adriaan en Olivier", "Anker", "Barend", "Blind", "Blokker", "Bolt", "Bruna", "Coronel", "De Boer", "De Hartog", "Ekkel", "Kieft", "Kompas", "Kuitenbrouwer", "Merckx", "Mulder", "Salamander", "Schippers", "Selexyz", "Stekelenburg", "Steven", "Stuurboord", "Verstappen", "Versteegh", "Visser", "Vos", "Wolkers", "Wouters", "Yates", "Zeeman"];
-            break;
-    }
 
-    document.getElementById("Raatsel_h2").innerHTML = "NRC Raatsel week " + location.hash[1] + location.hash[2];
+    setWeekPuzzle();
+
+    document.getElementById("Raatsel_h2").innerHTML = "NRC Raatsel week " + nrc_week;
+
+    const options = {weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'};
+    document.getElementById("nrc_puzzle_datum").innerHTML = "NRC Raatsel week " + nrc_week + " van " + nrc_date.toLocaleDateString('nl-NL', options);
+    document.getElementById("nrc_puzzle_link").innerHTML = "<a href=" + nrc_href + ">link naar nrc krant</a>";
     document.getElementById("witte_cellen").innerHTML = white_cells.join(" - ");
     document.getElementById("gekleurde_cellen").innerHTML = colored_cells.join(" - ");
 
@@ -125,20 +101,19 @@ document.addEventListener('click', function (event) {
 
         if (clickedElem.classList.contains('oplossing')) {
             modal.style.display = "block";
-            let weekNumber = location.hash[1] + location.hash[2];
-            let weekId = "week_" + weekNumber;
-            let puzzleDate = document.getElementById(weekId).getAttribute("data-puzzle");
-            let puzzleText = document.getElementById(weekId).innerText;
+            // let weekId = "week_" + nrc_week;
+            // let puzzleDate = document.getElementById(weekId).getAttribute("data-puzzle");
+            // let puzzleText = document.getElementById(weekId).innerText;
+            let puzzleDate = nrc_date.toISOString().split("T")[0];
             document.getElementById("oplossing_img").src = "images/raatsel-oplossing-" + puzzleDate + ".png";
-            captionText.innerHTML = "Oplossing van week " + weekNumber + ", " + puzzleText;
+            captionText.innerHTML = "Oplossing van week " + nrc_week + ", " + puzzleDate;
             document.getElementById("oplossing_img").style.visibility = "visible";
-            if (weekNumber === "18") {
+            if (nrc_week === nrc_week_max) {
                 document.getElementById("oplossing_img").style.visibility = "hidden";
-                captionText.innerHTML = "Oplossing van week " + weekNumber + ", " + puzzleText + " komt komende zaterdag";
+                captionText.innerHTML = "Oplossing van week " + nrc_week + ", " + puzzleDate + " komt komende zaterdag";
             }
         }
-    }
-    ,
+    },
     false
 );
 

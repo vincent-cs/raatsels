@@ -2,11 +2,17 @@
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0">
     <title>NRC Raatsel</title>
+    <link rel="stylesheet" type="text/css" href="hexa.css">
     <link rel="stylesheet" type="text/css" href="raatsel.css">
     <link rel="stylesheet" type="text/css" href="raatsel-modal.css">
 </head>
 <body>
+<nav>
+<ul id="menu_week_met_datum">
+</ul>
+</nav>
 <div>
     <h2 id="Raatsel_h2">NRC Raatsel</h2>
 </div>
@@ -234,38 +240,7 @@
 </div>
 
 <div style="clear: both">
-    <p><a href="#19">week 19</a>&nbsp;-&nbsp;
-        <a id="week_19" data-puzzle="2020-05-09" href="https://www.nrc.nl/nieuws/2020/05/09/raatsel-a3998912">NRC
-            raatsel 9 mei 2020</a>
-    </p>
-    <p><a href="#18">week 18</a>&nbsp;-&nbsp;
-        <a id="week_18" data-puzzle="2020-05-02" href="https://www.nrc.nl/nieuws/2020/05/02/raatsel-a3997534">NRC
-            raatsel 2 mei 2020</a>
-    </p>
-    <p><a href="#17">week 17</a>&nbsp;-&nbsp;
-        <a id="week_17" data-puzzle="2020-04-25" href="https://www.nrc.nl/nieuws/2020/04/25/raatsel-a3997534">NRC
-            raatsel 25 april 2020</a>
-    </p>
-    <p><a href="#16">week 16</a>&nbsp;-&nbsp;
-        <a id="week_16" data-puzzle="2020-04-18" href="https://www.nrc.nl/nieuws/2020/04/18/raatsel-a3996850">NRC
-            raatsel 18 april 2020</a>
-    </p>
-    <p><a href="#15">week 15</a>&nbsp;-&nbsp;
-        <a id="week_15" data-puzzle="2020-04-11" href="https://www.nrc.nl/nieuws/2020/04/11/raatsel-a3995577">NRC
-            raatsel 11 april 2020</a>
-    </p>
-    <p><a href="#14">week 14</a>&nbsp;-&nbsp;
-        <a id="week_14" data-puzzle="2020-04-04" href="https://www.nrc.nl/nieuws/2020/04/04/raatsel-a3995577">NRC
-            raatsel 4 april 2020</a>
-    </p>
-    <p><a href="#13">week 13</a>&nbsp;-&nbsp;
-        <a id="week_13" data-puzzle="2020-03-28" href="https://www.nrc.nl/nieuws/2020/03/28/raatsel-a3994896">NRC
-            raatsel 28 maart 2020</a>
-    </p>
-    <p>
-        <button class="oplossing">oplossing (spoiler alert!)</button>
-        <button id="temp_save">temp save array</button>
-    </p>
+    <button id="temp_save">temp save array</button>
 </div>
 
 <div id="temp_status" style="display:none;">
@@ -278,14 +253,20 @@
 
 <div>
     <hr/>
+    <h2 id="nrc_puzzle_datum"></h2>
+    <a id="nrc_puzzle_link" href="">link naar nrc krant</a>
     <p><b>Witte cellen:</b> <span id="witte_cellen">België - Dit jaar geschrapt – Floraal – Frankrijk - Met oo – Religieus – Voetbal</span>
     </p>
     <p><b>Gekleurde cellen:</b> <span id="gekleurde_cellen">Alex Pastoor – Anderlecht – Ardennen – Bizet – Bloemencorso Zundert – Burgers Zoo – Delacroix – Doop – Eddy Merckx – Euro 2020 – F1 Zandvoort – Fleur de lis – Gelredome – Gloria – Guido Gezelle – Hadewijch – Iris – Jaques Brel – Louis Paul Boon – Marcel van Roosmalen – Matthäus-Passion – Millet – Monnikskap – Parijs-Roubaix – Ronde van Vlaanderen – Rui Costa – Theo Bos – Tom Boonen – Veronica – Zonnebloem</span>
+    </p>
+    <p>
+        <button class="oplossing">oplossing (spoiler alert!)</button>
     </p>
 </div>
 
 <div>
     <hr/>
+    <h2>NRC Raatsel spelregels</h2>
     <p><b>Uitleg:</b> De symmetrische raat heeft 37 cellen (7 witte en 30 gekleurde). Daarin moet je 37 woorden
         invullen. Je krijgt ze alle 37 cadeau, je hoeft alleen maar uit te vinden waar ze moeten staan. Makkelijk
         gezegd, moeilijker gedaan. Hoe gaat het in z’n werk?</p>
@@ -295,6 +276,11 @@
         dat ze precies goed tussen hun buren zitten. Zie ter illustratie de oplossing van vorige week.</p>
     <p><b>Tip:</b> begin met potlood, of maak eerst een kladje. Gaandeweg ga je steeds meer betekenissen ontdekken. En
         vergeet niet dat je kan zoeken op internet.</p>
+</div>
+
+<div>
+    <hr/>
+    <h2>Gebruik van deze site</h2>
     <p><b>Noot:</b> Dankzij deze site heb je geen potlood nodig. Alle woorden zijn ingevuld maar nog niet op de juiste
         plek. Verwissel de woorden van plek om de puzzel op te lossen</p>
     <p><b>De wisseltruck: </b>Klik op een woord en zijn achtergrond word geel of oranje, vervolgens klik op de nieuwe
@@ -316,4 +302,5 @@
 
 </body>
 </html>
-<script src="raatsel.js"></script>
+
+<script type="module" src="raatsel.js"></script>
