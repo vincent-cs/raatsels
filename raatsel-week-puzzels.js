@@ -19,7 +19,7 @@ export function setWeekPuzzle() {
         case "#29" :
             // NRC raatsel 18 juli 2020, week 29
             nrc_week = 29;
-            nrc_date = new Date(Date.UTC(2020, 7, 18));
+            nrc_date = new Date(Date.UTC(2020, 6, 18));
             nrc_href = "https://www.nrc.nl/nieuws/2020/07/18/raatsel-a4006292";
             edge_cells = ["Han", "Alleen", "Begint met een P", "Architect", "6 letters", "Voetbalcoach"];
             white_cells = ["Begint met een meisjesnaam","Bouwwerk","In het water","Muziek","Religieus","Spel","Zelfde begin- en eindletter"];
@@ -30,7 +30,7 @@ export function setWeekPuzzle() {
         case "#28" :
             // NRC raatsel 11 juli 2020, week 28
             nrc_week = 28;
-            nrc_date = new Date(Date.UTC(2020, 7, 11));
+            nrc_date = new Date(Date.UTC(2020, 6, 11));
             nrc_href = "https://www.nrc.nl/nieuws/2020/07/11/raatsel-a4005614";
             edge_cells = ["ijsje", "Sportterm", "Groep", "Stok", "Vervoermiddel", "Hij gaat als een ..."];
             white_cells = ["5 letters","Begint met een B","Frans","Militair","Plaatsnaam","Ten afscheid","Wapentuig"];
@@ -41,7 +41,7 @@ export function setWeekPuzzle() {
         case "#27" :
             // NRC raatsel 4 juli 2020, week 27
             nrc_week = 27;
-            nrc_date = new Date(Date.UTC(2020, 7, 4));
+            nrc_date = new Date(Date.UTC(2020, 6, 4));
             nrc_href = "https://www.nrc.nl/nieuws/2020/07/04/raatsel-a4004935";
             edge_cells = ["Begint met een jongensnaam", "'s nachts", "Sukkel", "Begint met een G", "Hyppisch", "Auto"];
             white_cells = ["4 letters","Bolvormig","Dier","Dubbelop","Kleding","Plaatsnaam","Sport"];
