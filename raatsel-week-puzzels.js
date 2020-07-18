@@ -32,19 +32,23 @@ export function setWeekPuzzle() {
             // NRC raatsel 11 juli 2020, week 28
             nrc_week = 28;
             nrc_date = new Date(Date.UTC(2020, 7, 11));
-            nrc_href = "https://www.nrc.nl/nieuws/2020/05/09/raatsel-a3998912";
-            edge_cells = ["Eindigt op een a", "Dier", "Feeks", "Monic Hendrickx", "Palindroom", "Indonesië"];
-            white_cells = ["5 letters", "Automodel", "Begint met een s", "Meisjesnaam", "Mythologie", "NAVO-alfabet", "Stad"];
-            colored_cells = ["Anna", "Bravo", "Carina", "Echo", "Eenhoorn", "Eos", "Furie", "Harpij", "Hydra", "India", "Juliett", "Ka", "Kenau", "Kreng", "Lima", "Mustang", "Nadine", "Nynke", "Petra", "Quebec", "Sawa’s", "Semarang", "Sierra", "Sijs", "Soenda", "Soerabaja", "Sofia", "Sonja", "Suus", "Toledo"];
+            nrc_href = "https://www.nrc.nl/nieuws/2020/07/11/raatsel-a4005614";
+            edge_cells = ["ijsje", "Sportterm", "Groep", "Stok", "Vervoermiddel", "Hij gaat als een ..."];
+            white_cells = ["5 letters","Begint met een B","Frans","Militair","Plaatsnaam","Ten afscheid","Wapentuig"];
+            colored_cells = ["Adieu","Au revoir","Axel","Baton","Batterij","Bazooka","Bezemsteel","Biljartkeu",
+                "Break","Brommer","Bye","Chantilly","Dolle","Ensemble","Gendarmerie","Goedendag","Groet","Koets","Knots","Magnum",
+                "Manche","Peloton","Raket","Sedan","Saluut","Speer","Split","Staf","Trein","Winchester"];
             break;
         case "#20" :
             // NRC raatsel 4 juli 2020, week 27
             nrc_week = 27;
             nrc_date = new Date(Date.UTC(2020, 7, 4));
-            nrc_href = "https://www.nrc.nl/nieuws/2020/05/09/raatsel-a3998912";
-            edge_cells = ["Eindigt op een a", "Dier", "Feeks", "Monic Hendrickx", "Palindroom", "Indonesië"];
-            white_cells = ["5 letters", "Automodel", "Begint met een s", "Meisjesnaam", "Mythologie", "NAVO-alfabet", "Stad"];
-            colored_cells = ["Anna", "Bravo", "Carina", "Echo", "Eenhoorn", "Eos", "Furie", "Harpij", "Hydra", "India", "Juliett", "Ka", "Kenau", "Kreng", "Lima", "Mustang", "Nadine", "Nynke", "Petra", "Quebec", "Sawa’s", "Semarang", "Sierra", "Sijs", "Soenda", "Soerabaja", "Sofia", "Sonja", "Suus", "Toledo"];
+            nrc_href = "https://www.nrc.nl/nieuws/2020/07/04/raatsel-a4004935";
+            edge_cells = ["Begint met een jongensnaam", "'s nachts", "Sukkel", "Begint met een G", "Hyppisch", "Auto"];
+            white_cells = ["4 letters","Bolvormig","Dier","Dubbelop","Kleding","Plaatsnaam","Sport"];
+            colored_cells =["Assendelft","Babydoll","Bobben","Charleston","Cordoba","Eend","Egel","Fado","Gang","Gans",
+                "Gehaktbal","Gierzwaluw","Globe","Golf","Hansop","Ibiza","Judo","Kiel","Knol","Kogelvis","Oliebol","Polo",
+                "Reining","Robe","Rugby","Ruin","Uil","Vlinderdas","Voetbal","Vos"];
             break;
         case "#19" :
             // NRC raatsel 9 mei 2020, week 19
@@ -53,7 +57,9 @@ export function setWeekPuzzle() {
             nrc_href = "https://www.nrc.nl/nieuws/2020/05/09/raatsel-a3998912";
             edge_cells = ["Eindigt op een a", "Dier", "Feeks", "Monic Hendrickx", "Palindroom", "Indonesië"];
             white_cells = ["5 letters", "Automodel", "Begint met een s", "Meisjesnaam", "Mythologie", "NAVO-alfabet", "Stad"];
-            colored_cells = ["Anna", "Bravo", "Carina", "Echo", "Eenhoorn", "Eos", "Furie", "Harpij", "Hydra", "India", "Juliett", "Ka", "Kenau", "Kreng", "Lima", "Mustang", "Nadine", "Nynke", "Petra", "Quebec", "Sawa’s", "Semarang", "Sierra", "Sijs", "Soenda", "Soerabaja", "Sofia", "Sonja", "Suus", "Toledo"];
+            colored_cells = ["Anna", "Bravo", "Carina", "Echo", "Eenhoorn", "Eos", "Furie", "Harpij", "Hydra", "India", "Juliett",
+                "Ka", "Kenau", "Kreng", "Lima", "Mustang", "Nadine", "Nynke", "Petra", "Quebec", "Sawa’s", "Semarang", "Sierra",
+                "Sijs", "Soenda", "Soerabaja", "Sofia", "Sonja", "Suus", "Toledo"];
             break;
         case "#18" :
             // NRC raatsel 2 mei 2020, week 18
