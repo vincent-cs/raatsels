@@ -16,6 +16,36 @@ export function setWeekPuzzle() {
     switch (location.hash) {
         default:
             location.hash = nrc_week_max.toString();
+
+        case "#22" :
+            // NRC raatsel 18 juli 2020, week 29
+            nrc_week = 29;
+            nrc_date = new Date(Date.UTC(2020, 7, 18));
+            nrc_href = "https://www.nrc.nl/nieuws/2020/07/18/raatsel-a4006292";
+            edge_cells = ["Han", "Alleen", "Begint met een P", "Architect", "6 letters", "Voetbalcoach"];
+            white_cells = ["Begint met een meisjesnaam","Bouwwerk","In het water","Muziek","Religieus","Spel","Zelfde begin- en eindletter"];
+            colored_cells = ["Aria","Berger","Boothuis","Cantor","Dam","Duiker","Enrique","Ensemble","Hotel","Jokeren","Kerk",
+                "Koraal","Koster","Kwartet","Lotus","Mariakapel","Moslim","Noten","Opera","Pagode","Pastoor","Patience","Pennywafel",
+                "Pesten","Piano","Reiziger","Rietveld","Römer","Solitaire","Solo"];
+            break;
+        case "#21" :
+            // NRC raatsel 11 juli 2020, week 28
+            nrc_week = 28;
+            nrc_date = new Date(Date.UTC(2020, 7, 11));
+            nrc_href = "https://www.nrc.nl/nieuws/2020/05/09/raatsel-a3998912";
+            edge_cells = ["Eindigt op een a", "Dier", "Feeks", "Monic Hendrickx", "Palindroom", "Indonesië"];
+            white_cells = ["5 letters", "Automodel", "Begint met een s", "Meisjesnaam", "Mythologie", "NAVO-alfabet", "Stad"];
+            colored_cells = ["Anna", "Bravo", "Carina", "Echo", "Eenhoorn", "Eos", "Furie", "Harpij", "Hydra", "India", "Juliett", "Ka", "Kenau", "Kreng", "Lima", "Mustang", "Nadine", "Nynke", "Petra", "Quebec", "Sawa’s", "Semarang", "Sierra", "Sijs", "Soenda", "Soerabaja", "Sofia", "Sonja", "Suus", "Toledo"];
+            break;
+        case "#20" :
+            // NRC raatsel 4 juli 2020, week 27
+            nrc_week = 27;
+            nrc_date = new Date(Date.UTC(2020, 7, 4));
+            nrc_href = "https://www.nrc.nl/nieuws/2020/05/09/raatsel-a3998912";
+            edge_cells = ["Eindigt op een a", "Dier", "Feeks", "Monic Hendrickx", "Palindroom", "Indonesië"];
+            white_cells = ["5 letters", "Automodel", "Begint met een s", "Meisjesnaam", "Mythologie", "NAVO-alfabet", "Stad"];
+            colored_cells = ["Anna", "Bravo", "Carina", "Echo", "Eenhoorn", "Eos", "Furie", "Harpij", "Hydra", "India", "Juliett", "Ka", "Kenau", "Kreng", "Lima", "Mustang", "Nadine", "Nynke", "Petra", "Quebec", "Sawa’s", "Semarang", "Sierra", "Sijs", "Soenda", "Soerabaja", "Sofia", "Sonja", "Suus", "Toledo"];
+            break;
         case "#19" :
             // NRC raatsel 9 mei 2020, week 19
             nrc_week = 19;
