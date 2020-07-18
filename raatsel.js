@@ -15,10 +15,13 @@ import {
 let menu = "<li><a >week</a></li>";
 let menu_date = new Date(2020, 2, 28);
 const menu_date_option = {month: 'long', day: 'numeric'};
+
 for (let x = nrc_week_min; x <= nrc_week_max; x++) {
-    menu += "<li><a href='#" + x + "'>" + x + " / " + menu_date.toLocaleDateString("nl-NL", menu_date_option) + "</a></li>\n";
+    if (x<20 ||x>26)
+        menu += "<li><a href='#" + x + "'>" + x + " / " + menu_date.toLocaleDateString("nl-NL", menu_date_option) + "</a></li>\n";
     menu_date.setDate(menu_date.getDate() + 7);
 }
+
 document.getElementById("menu_week_met_datum").innerHTML = menu;
 
 function locationHashChanged() {

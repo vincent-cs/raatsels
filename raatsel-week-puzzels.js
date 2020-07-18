@@ -6,7 +6,7 @@ export  let colored_cells = [];
 
 export  let nrc_week = 0;
 export  let nrc_week_min = 13;
-export  let nrc_week_max = 19;
+export  let nrc_week_max = 29;
 export  let nrc_date = new Date();
 export  let nrc_href = "";
 
@@ -16,8 +16,7 @@ export function setWeekPuzzle() {
     switch (location.hash) {
         default:
             location.hash = nrc_week_max.toString();
-
-        case "#22" :
+        case "#29" :
             // NRC raatsel 18 juli 2020, week 29
             nrc_week = 29;
             nrc_date = new Date(Date.UTC(2020, 7, 18));
@@ -28,7 +27,7 @@ export function setWeekPuzzle() {
                 "Koraal","Koster","Kwartet","Lotus","Mariakapel","Moslim","Noten","Opera","Pagode","Pastoor","Patience","Pennywafel",
                 "Pesten","Piano","Reiziger","Rietveld","Römer","Solitaire","Solo"];
             break;
-        case "#21" :
+        case "#28" :
             // NRC raatsel 11 juli 2020, week 28
             nrc_week = 28;
             nrc_date = new Date(Date.UTC(2020, 7, 11));
@@ -39,7 +38,7 @@ export function setWeekPuzzle() {
                 "Break","Brommer","Bye","Chantilly","Dolle","Ensemble","Gendarmerie","Goedendag","Groet","Koets","Knots","Magnum",
                 "Manche","Peloton","Raket","Sedan","Saluut","Speer","Split","Staf","Trein","Winchester"];
             break;
-        case "#20" :
+        case "#27" :
             // NRC raatsel 4 juli 2020, week 27
             nrc_week = 27;
             nrc_date = new Date(Date.UTC(2020, 7, 4));
