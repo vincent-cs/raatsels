@@ -38,6 +38,18 @@ export function setWeekPuzzle() {
                 "Break","Brommer","Bye","Chantilly","Dolle","Ensemble","Gendarmerie","Goedendag","Groet","Koets","Knots","Magnum",
                 "Manche","Peloton","Raket","Sedan","Saluut","Speer","Split","Staf","Trein","Winchester"];
             break;
+        case "#28o" :
+            // oplossing
+            nrc_week = 28;
+            nrc_date = new Date(Date.UTC(2020, 6, 11));
+            nrc_href = "https://www.nrc.nl/nieuws/2020/07/11/raatsel-a4005614";
+            edge_cells = ["ijsje", "Sportterm", "Groep", "Stok", "Vervoermiddel", "Hij gaat als een ..."];
+            white_cells = ["Plaatsnaam", "Wapentuig", "Frans", "Ten afscheid", "5 letters", "Militair", "Begint met een B"];
+            colored_cells = ["Split", "Magnum", "Chantilly", "Axel", "Manche", "Raket", "Winchester", "Groet", "Sedan",
+                "Peloton", "Speer", "Knots", "Goedendag", "Au revoir", "Gendarmerie", "Ensemble", "Dolle", "Adieu",
+                "Bye", "Saluut", "Batterij", "Trein", "Koets", "Break", "Bazooka", "Baton", "Staf", "Brommer",
+                "Bezemsteel", "Biljartkeu"];
+            break;
         case "#27" :
             // NRC raatsel 4 juli 2020, week 27
             nrc_week = 27;
@@ -48,6 +60,17 @@ export function setWeekPuzzle() {
             colored_cells =["Assendelft","Babydoll","Bobben","Charleston","Cordoba","Eend","Egel","Fado","Gang","Gans",
                 "Gehaktbal","Gierzwaluw","Globe","Golf","Hansop","Ibiza","Judo","Kiel","Knol","Kogelvis","Oliebol","Polo",
                 "Reining","Robe","Rugby","Ruin","Uil","Vlinderdas","Voetbal","Vos"];
+            break;
+        case "#27o" :
+            // oplossing
+            nrc_week = 27;
+            nrc_date = new Date(Date.UTC(2020, 6, 4));
+            nrc_href = "https://www.nrc.nl/nieuws/2020/07/04/raatsel-a4004935";
+            edge_cells = ["Begint met een jongensnaam", "'s nachts", "Sukkel", "Begint met een G", "Hyppisch", "Auto"];
+            white_cells = ["Kleding", "Plaatsnaam", "Dier", "Dubbelop", "Sport", "Bolvormig", "4 letters"]
+            colored_cells = ["Hansop", "Charleston", "Robe", "Babydoll", "Egel", "Cordoba", "Kiel", "Vlinderdas", "Vos", "Uil",
+                "Ibiza", "Rugby", "Assendelft", "Gierzwaluw", "Kogelvis", "Eend", "Golf", "Bobben", "Fado", "Voetbal",
+                "Oliebol", "Polo", "Reining", "Judo", "Knol", "Globe", "Gehaktbal", "Ruin", "Gang", "Gans"];
             break;
         case "#19" :
             // NRC raatsel 9 mei 2020, week 19
